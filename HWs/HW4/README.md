@@ -8,7 +8,7 @@ Users should be able to
 
 I developed this application in 2 different ways.
 
-First is *Transaction script* using Table Data Gateway.
-Second is *Domain model* a cleaner way to implement it, using JPA.
+First is **Transaction script** using Table Data Gateway.
+Second is **Domain model** a cleaner way to implement it, using JPA.
 
 
