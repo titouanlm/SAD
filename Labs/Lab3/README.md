@@ -35,7 +35,7 @@ Now User table has the foreign key of Employee.
 
 
 
-**c) **
+**c)**
 
 The difference between cascade.REMOVE and orphanRemoval=true is, 
 
@@ -46,7 +46,7 @@ Else if I use orphan removal, it removes only corresponding child when I remove 
 
 
 
-**d) **
+**d)**
 
 When I removed lazy load from addresses and benefits, then it was eager load and, addresses and benefits has been load by default when I loaded employee.
 
@@ -54,7 +54,7 @@ When I removed lazy load from addresses and benefits, then it was eager load and
 
 
 
-**e) **
+**e)**
 
 When I removed cascade = cascadeType.ALL and orphanRemoval = true from benefits and addresses, 2 things happened. First, when I run testCascadeRemove, Objects in addresses are not removed. 
 Second, when I run testCascadePersist, benefits created does not persist in the database.
@@ -63,7 +63,7 @@ Second, when I run testCascadePersist, benefits created does not persist in the 
 
 
 
-**f) **
+**f)**
 
 Error obtain when I removed @Transactional from testCascadeRemove : No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
 
