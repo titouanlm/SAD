@@ -9,7 +9,9 @@ then the first testCache no longer needs to make a query because the employee is
 This is due to the fact that the employee's cache has been increased to 20 seconds.
 
 
-b) Here is the code I modified in User and Employee.
+b) 
+
+Here is the code I modified in User and Employee.
 
 User.class
 
@@ -30,6 +32,9 @@ private User user;
 
 Now User table has the foreign key of Employee.
 
+
+
+
 c) The difference between cascade.REMOVE and orphanRemoval=true is, 
 
 if I use cascade removal, it removes all children when parent is removed.
@@ -37,11 +42,18 @@ if I use cascade removal, it removes all children when parent is removed.
 Else if I use orphan removal, it removes only corresponding child when I remove it from the relationships.
 
 
+
+
 d) When I removed lazy load from addresses and benefits, then it was eager load and, addresses and benefits has been load by default when I loaded employee.
+
+
+
 
 
 e) When I removed cascade = cascadeType.ALL and orphanRemoval = true from benefits and addresses, 2 things happened. First, when I run testCascadeRemove, Objects in addresses are not removed. 
 Second, when I run testCascadePersist, benefits created does not persist in the database.
+
+
 
 
 
