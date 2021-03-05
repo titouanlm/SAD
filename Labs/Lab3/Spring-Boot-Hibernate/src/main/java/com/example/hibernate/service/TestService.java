@@ -34,13 +34,14 @@ public class TestService {
 
 	}
 	
+	
 	@Transactional // will handle session automatically
 	public void testFetch(int id) {
 		System.out.println("-- Loading entities --");
 		Employee employee = em.find(Employee.class, id);
 		System.out.println("Employee loaded: " + employee.getName().getFname());
 
-		// Address is lazy load, so will not be queried unless its info is needed
+				// Address is lazy load, so will not be queried unless its info is needed
 		System.out.println("-- Loading addresses --");
 		System.out.println("City Address loaded: " + employee.getAddresses().iterator().next().getId().getCity());
 

@@ -72,7 +72,7 @@ public class Employee {
 	private List<Address> addresses;
 
 	// When you load employee, it will not load benefits by default
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JsonIgnore
 	@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 	private Set<Benefit> benefits;
