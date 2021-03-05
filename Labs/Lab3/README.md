@@ -64,6 +64,7 @@ Second, when I run testCascadePersist, benefits created does not persist in the 
 
 
 f) 
+
 Error obtain when I removed @Transactional from testCascadeRemove : No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call
 
 The reason is that one Entity Manager can be used across several database transactions, so we inject an Entity Manager with @PersistenceContext to run in a single database transaction. But in this mode, we need to precise the method with @Transactional to use this Entity Manager inside.
