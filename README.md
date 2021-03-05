@@ -8,9 +8,12 @@
   - **HW1** : Architecture Tradeoffs
   - **HW2** : Setting up a simple Spring Boot project
   - **HW3** : Design Patterns
+  - **HW4** : Domain Logic and Data Source
+
 
 
 ## Labs :  All the lab of the course
 
   - **Lab1** : Developing MVC+REST Architecture with Spring Boot
   - **Lab2** : Spring Security
+  - **Lab3** : ORM, Hibernate, JPA, and Spring
