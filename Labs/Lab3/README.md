@@ -69,3 +69,6 @@ Error obtain when I removed @Transactional from testCascadeRemove : No EntityMan
 
 The reason is that one Entity Manager can be used across several database transactions, so we inject an Entity Manager with @PersistenceContext to run in a single database transaction. But in this mode, we need to precise the method with @Transactional to use this Entity Manager inside.
 
+g)
+
+See HibernateApplicationTests.java
