@@ -10,6 +10,8 @@
   - **HW3** : Design Patterns
   - **HW4** : Domain Logic and Data Source
   - **HW5** : Multi-Thread and CompletableFuture
+  - **HW6** : Optimistic and Pessimistic Locking
+  - **HW7** : Spring Session
 
 
 ## Labs 
